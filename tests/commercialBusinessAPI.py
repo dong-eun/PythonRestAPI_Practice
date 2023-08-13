@@ -25,6 +25,11 @@ repones = requests.get(url, params=queryParams)
 # print(jsonString)
 
 data = repones.json()
+print(type(data))
 print(data)
-pythonString = json.dumps(data, indent=2)
-print(pythonString)
+print(type(data['list']))
+print(data['list'])
+data_list = data['list']
+data_dict = data_list[0]
+print(data_dict)
+print(data_dict['arrvTolofCd'])
